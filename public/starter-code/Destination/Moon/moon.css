@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Commissioner:wght@400;500;700&family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700&family=Josefin+Sans:wght@300&family=Karla:wght@400;700&family=League+Spartan:wght@500;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@600;800&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Rubik:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    height: 792px;
+  }
+  .container .header {
+    padding: 25px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .header .logo {
+    width: 10%;
+  }
+  .container .header .navigation {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 200px;
+    padding: 20px 0 0 0;
+    background-color: rgba(21, 9, 43, 0.3);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  .container .header .navigation a {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    padding: 30px 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .header .navigation a:hover {
+    border-bottom: 3px solid #939393;
+  }
+  .container .header .navigation .home .destination-line, .container .header .navigation .destination .destination-line, .container .header .navigation .crew .destination-line, .container .header .navigation .technology .destination-line {
+    width: 100%;
+    height: 3px;
+    margin-top: -3px;
+    background-color: #fff;
+  }
+  .container .header .navigation .home .technology-line, .container .header .navigation .destination .technology-line, .container .header .navigation .crew .technology-line, .container .header .navigation .technology .technology-line {
+    margin-bottom: 0;
+  }
+  .container .header .navigation span {
+    font-weight: 900;
+  }
+  .container .header .bar {
+    position: absolute;
+    right: 25px;
+  }
+  .container .header .close {
+    position: absolute;
+    right: 25px;
+    visibility: hidden;
+  }
+  .container .pick-destination {
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 200px;
+    background-image: url(/assets/destination/image-moon.png);
+    background-position: 100px 45px;
+    background-size: 45%;
+    background-repeat: no-repeat;
+  }
+  .container .pick-destination span {
+    color: #8c8c8c;
+    font-size: large;
+    margin-right: 20px;
+  }
+  .container .pick-destination h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .container .main {
+    color: #fff;
+    text-align: center;
+  }
+  .container .main .main-nav {
+    margin-bottom: 20px;
+  }
+  .container .main .main-nav a {
+    color: #b6b6e2;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .main .main-nav .active {
+    border-bottom: 2px solid #babcde;
+  }
+  .container .main .main-nav a:hover {
+    text-decoration: underline;
+  }
+  .container .main .big-font {
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: normal;
+    font-family: serif;
+    text-transform: uppercase;
+  }
+  .container .main .para {
+    color: #b6b6e2;
+    padding: 0 30px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .container .main .line {
+    height: 0.5px;
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-color: #434343;
+  }
+  .container .main .duration .distance, .container .main .duration .time {
+    margin-bottom: 30px;
+  }
+  .container .main .duration .distance p, .container .main .duration .time p {
+    margin-bottom: 10px;
+  }
+  .container .main .duration .distance h2, .container .main .duration .time h2 {
+    font-family: serif;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
+    height: 792px;
+  }
+  .container .header {
+    padding: 25px 0 15px 60px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .header .logo {
+    width: 6%;
+  }
+  .container .header .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(21, 9, 43, 0.3);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+    padding-right: 40px;
+  }
+  .container .header .navigation a {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 30px 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .header .navigation a:hover {
+    border-bottom: 3px solid #939393;
+  }
+  .container .header .navigation .home, .container .header .navigation .destination, .container .header .navigation .crew, .container .header .navigation .technology {
+    margin-left: 10px;
+  }
+  .container .header .navigation .home .destination-line, .container .header .navigation .destination .destination-line, .container .header .navigation .crew .destination-line, .container .header .navigation .technology .destination-line {
+    width: 100%;
+    height: 3px;
+    margin-top: -3px;
+    background-color: white;
+  }
+  .container .header .navigation .home .technology-line, .container .header .navigation .destination .technology-line, .container .header .navigation .crew .technology-line, .container .header .navigation .technology .technology-line {
+    margin-bottom: 0;
+  }
+  .container .header .navigation span {
+    font-weight: 900;
+  }
+  .container .header .bar, .container .header .close {
+    display: none;
+  }
+  .container .pick-destination {
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 250px;
+    background-image: url(/assets/destination/image-moon.png);
+    background-position: 300px 45px;
+    background-size: 25%;
+    background-repeat: no-repeat;
+  }
+  .container .pick-destination span {
+    color: #8c8c8c;
+    font-size: large;
+    margin-right: 20px;
+  }
+  .container .pick-destination h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .container .main {
+    color: #fff;
+    text-align: center;
+  }
+  .container .main .main-nav {
+    margin-bottom: 20px;
+  }
+  .container .main .main-nav a {
+    color: #b6b6e2;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .main .main-nav .active {
+    border-bottom: 2px solid #babcde;
+  }
+  .container .main .main-nav a:hover {
+    text-decoration: underline;
+  }
+  .container .main .big-font {
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: normal;
+    font-family: serif;
+    text-transform: uppercase;
+  }
+  .container .main .para {
+    color: #b6b6e2;
+    padding: 0 120px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .container .main .line {
+    height: 0.5px;
+    width: 500px;
+    margin: 0 150px 40px;
+    background-color: #434343;
+  }
+  .container .main .duration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 80px;
+  }
+  .container .main .duration .distance, .container .main .duration .time {
+    margin-bottom: 30px;
+  }
+  .container .main .duration .distance p, .container .main .duration .time p {
+    margin-bottom: 10px;
+  }
+  .container .main .duration .distance h2, .container .main .duration .time h2 {
+    font-family: serif;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+    height: 792px;
+  }
+  .container .header {
+    padding: 25px 0 15px 60px;
+    margin-bottom: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .header .logo {
+    width: 3.5%;
+  }
+  .container .header .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px 190px 13px 80px;
+    background-color: rgba(55, 49, 67, 0.3);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+  }
+  .container .header .navigation a {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 30px 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .header .navigation a:hover {
+    border-bottom: 3px solid #939393;
+  }
+  .container .header .navigation .home, .container .header .navigation .destination, .container .header .navigation .crew, .container .header .navigation .technology {
+    margin-left: 10px;
+  }
+  .container .header .navigation .home .destination-line, .container .header .navigation .destination .destination-line, .container .header .navigation .crew .destination-line, .container .header .navigation .technology .destination-line {
+    width: 100%;
+    height: 3px;
+    margin-top: -3px;
+    background-color: #fff;
+  }
+  .container .header .navigation .home .technology-line, .container .header .navigation .destination .technology-line, .container .header .navigation .crew .technology-line, .container .header .navigation .technology .technology-line {
+    margin-bottom: 0;
+  }
+  .container .header .navigation span {
+    font-weight: 900;
+  }
+  .container .header .bar, .container .header .close {
+    display: none;
+  }
+  .container .flex-desktop {
+    padding: 0 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .container .pick-destination {
+    -ms-flex-preferred-size: 1200px;
+        flex-basis: 1200px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-bottom: 48%;
+    background-image: url(/assets/destination/image-moon.png);
+    background-position: 0px 80px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+  .container .pick-destination span {
+    color: #8c8c8c;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .container .pick-destination h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 25px;
+  }
+  .container .main {
+    color: #fff;
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    margin-top: 100px;
+  }
+  .container .main .main-nav {
+    margin-bottom: 25px;
+  }
+  .container .main .main-nav .moon-dest {
+    margin-left: 0;
+  }
+  .container .main .main-nav a {
+    font-size: 22px;
+    color: #b6b6e2;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .container .main .main-nav .active {
+    border-bottom: 2px solid #babcde;
+  }
+  .container .main .main-nav a:hover {
+    text-decoration: underline;
+  }
+  .container .main .big-font {
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-weight: normal;
+    font-family: serif;
+    text-transform: uppercase;
+  }
+  .container .main .para {
+    color: #b6b6e2;
+    padding: 0 0px;
+    font-size: large;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .container .main .line {
+    height: 0.5px;
+    width: 550px;
+    margin: 50px 0;
+    background-color: #434343;
+  }
+  .container .main .duration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0 0px;
+  }
+  .container .main .duration .distance, .container .main .duration .time {
+    margin-right: 160px;
+  }
+  .container .main .duration .distance p, .container .main .duration .time p {
+    margin-bottom: 10px;
+  }
+  .container .main .duration .distance h2, .container .main .duration .time h2 {
+    font-family: serif;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=moon.css.map */
